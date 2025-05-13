@@ -589,6 +589,13 @@ gap: 27px;
 	.top-header {
 		padding: 20px 0 50px;
 	}
+	.work-img{
+		width: 340px !important;
+	}
+	.work-img img{
+		width: 100%;
+		object-fit: fill;
+	}
 	.menu-item-has-children a::after {
 	  font-size: 10px;
 	
@@ -882,6 +889,89 @@ border-radius: 0 16px 16px 0;
   .transparent{
 	background:transparent;
   }
+  main-slider-img{
+	object-fit:cover;
+	width: 100%;
+}
+.main-slider .swiper-pagination {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	bottom: -36px;
+}
+
+.main-slider .swiper-pagination .swiper-pagination-bullet {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid var(--main-color);
+	opacity: 1;
+	margin: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	outline: none !important;
+}
+
+
+.main-slider .swiper-pagination .swiper-pagination-bullet:hover {
+	
+	width: 37px;
+	height: 14px;
+	background-color: var(--main-color);
+	border: 0;
+	border-radius: 10px;
+}
+
+.main-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	width: 37px;
+	height: 14px;
+	background-color: var(--main-color);
+	border: 0;
+	border-radius: 10px;
+	opacity: 1;
+}
+.main-slider .swiper-btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+  }
+  
+  .main-slider .swiper-btn {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	transform: translateY(-50%);
+	background-color: var(--main-color);
+	border: 1px solid ;
+	font-size: 16px;
+	color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+  }
+  .main-slider {
+	position: relative;
+  }
+  .main-slider .swiper-btn:hover {
+	color: var(--main-color);
+	background-color: rgba(233, 255, 224, 1);
+  }
+  
+  .main-slider .swiper-btn.swiper-btn-next {
+	left: 70px;
+  }
+  
+  .main-slider .swiper-btn.swiper-btn-prev {
+	right: 70px;
+  }
   /*                      services-section                      */
 
   /****** story section   ***/
@@ -1003,8 +1093,8 @@ border-radius: 0 16px 16px 0;
 	margin: 0;
 	line-height: 22px;
   }
-  .work-img img{
-	width: 100%;
+  .work-img{
+	width: 500px;
   }
   .work-block{
 	background: linear-gradient(147.39deg, rgba(255, 255, 255, 0.5) 9.49%, rgba(255, 255, 255, 0) 89.2%);
